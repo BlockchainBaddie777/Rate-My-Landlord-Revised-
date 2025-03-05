@@ -1,0 +1,110 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?galaxy,space') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Tabs */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #7a00ff;
+}
+
+.tab-content {
+  display: none;
+  margin: 20px 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Star Rating */
+.stars {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star:hover {
+  color: #ff9900;
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a00ff;
+}
+
+/* Add Landlord Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  width: 85%;
+}
