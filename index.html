@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate My Landlord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navigation Tabs -->
+    <div class="nav">
+      <button id="tab-rating" class="tab-button active">Rate a Landlord</button>
+      <button id="tab-landlord-directory" class="tab-button">Landlord Directory</button>
+      <button id="tab-add" class="tab-button">Add a Landlord</button>
+    </div>
+
+    <!-- Rating Tab -->
+    <div id="rating-tab" class="tab-content active">
+      <h2>🌌 Rate Here 🌟</h2>
+      <div class="stars">
+        <span class="star" data-value="1">☆</span>
+        <span class="star" data-value="2">☆</span>
+        <span class="star" data-value="3">☆</span>
+        <span class="star" data-value="4">☆</span>
+        <span class="star" data-value="5">☆</span>
+      </div>
+      <div id="rating-info">
+        <p>🌠 Average Rating: <span id="average-rating">0</span>/5</p>
+        <p>🪐 Total Ratings: <span id="total-ratings">0</span></p>
+      </div>
+      <button id="submit-button">🚀 Submit Rating</button>
+
+      <!-- Comment Section -->
+      <div class="comment-section">
+        <h2>💬 Leave a Comment</h2>
+        <textarea id="comment-box" rows="4" placeholder="Share your thoughts about this Landlord..."></textarea>
+        <button id="submit-comment">Submit Comment</button>
+        <div id="comments-list"></div>
+      </div>
+    </div>
+
+    <!-- Landlord Directory Tab -->
+    <div id="landlord-directory-tab" class="tab-content">
+      <h2>🏠 Landlord Directory</h2>
+      <ul id="landlord-list-ul"></ul>
+    </div>
+
+    <!-- Add Landlord Tab -->
+    <div id="add-landlord-tab" class="tab-content">
+      <h2>🏠 Add a New Landlord</h2>
+      <form id="add-landlord-form">
+        <input type="text" id="landlord-name" placeholder="Landlord Name" required />
+        <input type="text" id="landlord-phone" placeholder="Phone Number" required />
+        <input type="email" id="landlord-email" placeholder="Email Address" required />
+        <input type="text" id="landlord-property" placeholder="Property Name" required />
+        <input type="file" id="landlord-photo" accept="image/*" />
+        <button type="submit">Add Landlord</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
